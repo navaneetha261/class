@@ -11,7 +11,7 @@ import {
   SavedVideoTitle,
   SavedVideoList,
   SavedText,
-  NoSavedVideosView,
+  NoSavedVideoView,
   NoSavedVideosImage,
   NoSavedVideosHeading,
   NoSavedVideosNote,
@@ -37,14 +37,14 @@ const SavedVideos = () => (
               </SavedTitleIconContainer>
               <SavedText color={textColor}>Saved Video</SavedText>
             </SavedVideoTitle>
-            {savedVideo.length > 0 ? (
+            {savedVideos.length > 0 ? (
               <SavedVideoList>
                 {savedVideos.map(eachVideo => (
                   <VideoCard key={eachVideo.id} videoDetails={eachVideo} />
                 ))}
               </SavedVideoList>
             ) : (
-              <NoSavedVideosView>
+              <NoSavedVideoView>
                 <NoSavedVideosImage
                   src="https://assets.ccbp.in/frontend/react-js/nxt-watch-no-saved-videos-img.png"
                   alt="no saved videos"
@@ -55,7 +55,7 @@ const SavedVideos = () => (
                 <NoSavedVideosNote noteColor={noteColor}>
                   You can save your videos while watching them
                 </NoSavedVideosNote>
-              </NoSavedVideosView>
+              </NoSavedVideoView>
             )}
           </SavedContainer>
         </>

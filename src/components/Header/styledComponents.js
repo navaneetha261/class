@@ -25,7 +25,7 @@ export const HeaderLogo = styled.img`
   }
 `
 
-export const ActionContainer = styled.div`
+export const ActionsContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;

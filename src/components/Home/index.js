@@ -7,7 +7,7 @@ import {AiOutlineClose, AiOutlineSearch} from 'react-icons/ai'
 import Header from '../Header'
 import NavigationBar from '../NavigationBar'
 import ThemeAndVideoContext from '../../context/ThemeAndVideoContext'
-import HomeVideo from '../HomeVideo'
+import HomeVideos from '../HomeVideos'
 import FailureView from '../FailureView'
 
 import {
@@ -100,7 +100,7 @@ class Home extends Component {
 
   renderVideosView = () => {
     const {homeVideos} = this.state
-    return <HomeVideo homeVideos={homeVideos} onRetry={this.onRetry} />
+    return <HomeVideos homeVideos={homeVideos} onRetry={this.onRetry} />
   }
 
   renderFailureView = () => <FailureView onRetry={this.onRetry} />
@@ -168,7 +168,7 @@ class Home extends Component {
                     data-testid="searchButton"
                     onClick={this.getSearchResults}
                   >
-                    <AiOutlineClose size={20} />
+                    <AiOutlineSearch size={20} />
                   </SearchIconContainer>
                 </SearchContainer>
                 {this.renderHomeVideos()}
