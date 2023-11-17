@@ -5,7 +5,7 @@ import LoginForm from './components/LoginForm'
 import Home from './components/Home'
 import VideoDetailView from './components/VideoDetailsView'
 import TrendingVideos from './components/TrendingVideos'
-import GamingVideo from './components/GamingVideos'
+import GamingVideos from './components/GamingVideos'
 import SavedVideos from './components/SavedVideos'
 import NotFound from './components/NotFound'
 
@@ -32,7 +32,7 @@ class App extends Component {
 
   addVideo = video => {
     const {savedVideos} = this.state
-    const index = savedVideos.findIndex(eachVideo.id === video.id)
+    const index = savedVideos.findIndex(eachVideo => eachVideo.id === video.id)
     if (index === -1) {
       this.setState({savedVideos: [...savedVideos, video]})
     } else {
