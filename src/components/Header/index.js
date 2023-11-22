@@ -20,7 +20,7 @@ import {
   CloseButton,
   ConfirmButton,
   ModalDesc,
-  ButtonContainer,
+  ButtonsContainer,
 } from './styledComponents'
 
 const Header = props => (
@@ -79,7 +79,7 @@ const Header = props => (
               {close => (
                 <ModalContainer>
                   <ModalDesc>Are you sure, you want to logout?</ModalDesc>
-                  <ButtonContainer>
+                  <ButtonsContainer>
                     <CloseButton
                       type="button"
                       data-testid="closeButton"
@@ -91,7 +91,7 @@ const Header = props => (
                     <ConfirmButton type="button" onClick={onClickLogout}>
                       Confirm
                     </ConfirmButton>
-                  </ButtonContainer>
+                  </ButtonsContainer>
                 </ModalContainer>
               )}
             </Popup>
@@ -107,7 +107,7 @@ const Header = props => (
               {close => (
                 <ModalContainer>
                   <ModalDesc>Are you sure, you want to logout?</ModalDesc>
-                  <ButtonContainer>
+                  <ButtonsContainer>
                     <CloseButton
                       type="button"
                       data-testid="closeButton"
@@ -119,7 +119,7 @@ const Header = props => (
                     <ConfirmButton type="button" onClick={onClickLogout}>
                       Confirm
                     </ConfirmButton>
-                  </ButtonContainer>
+                  </ButtonsContainer>
                 </ModalContainer>
               )}
             </Popup>

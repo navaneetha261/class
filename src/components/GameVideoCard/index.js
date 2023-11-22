@@ -20,7 +20,7 @@ const VideoCard = props => {
         const textColor = isDarkTheme ? '#f9f9f9' : '#231f20'
 
         return (
-          <ItemLink to={`/video/${id}`} className="link">
+          <ItemLink to={`/videos/${id}`} className="link">
             <GamingListItem>
               <GamingThumbNailImage src={thumbnailUrl} alt="video thumbnail" />
               <GamingContentSection>

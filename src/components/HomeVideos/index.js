@@ -14,7 +14,7 @@ const HomeVideos = props => {
   const {homeVideos, onRetry} = props
   const videosCount = homeVideos.length
 
-  const OnClickRetry = () => {
+  const onClickRetry = () => {
     onRetry()
   }
 
@@ -43,7 +43,7 @@ const HomeVideos = props => {
             <NoVideosNote noteColor={noteColor}>
               Try different keywords or remove search filter
             </NoVideosNote>
-            <RetryButton type="button" onClick={OnClickRetry}>
+            <RetryButton type="button" onClick={onClickRetry}>
               Retry
             </RetryButton>
           </NoVideosView>

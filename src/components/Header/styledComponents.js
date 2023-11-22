@@ -130,7 +130,7 @@ export const ModalDesc = styled.p`
     font-size: 20px;
   }
 `
-export const ButtonContainer = styled.div`
+export const ButtonsContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;

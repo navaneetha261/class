@@ -1,4 +1,4 @@
-import {Components} from 'react'
+import {Component} from 'react'
 import {AiFillHome} from 'react-icons/ai'
 import {HiFire} from 'react-icons/hi'
 import {SiYoutubegaming} from 'react-icons/si'
@@ -21,8 +21,8 @@ import {
   NavBar,
 } from './styledComponents'
 
-class NavigationBar extends Components {
-  renderTabItem = () => (
+class NavigationBar extends Component {
+  renderTabItems = () => (
     <ThemeAndVideoContext.Consumer>
       {value => {
         const {isDarkTheme, activeTab, changeTab} = value
@@ -161,7 +161,7 @@ class NavigationBar extends Components {
   )
 
   render() {
-    return <>{this.renderTabItem()}</>
+    return <>{this.renderTabItems()}</>
   }
 }
 export default NavigationBar

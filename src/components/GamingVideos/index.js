@@ -70,7 +70,7 @@ class GamingVideos extends Component {
     </LoaderContainer>
   )
 
-  renderVideoView = () => {
+  renderVideosView = () => {
     const {gamingVideos} = this.state
     return (
       <GamingVideoList>
@@ -92,7 +92,7 @@ class GamingVideos extends Component {
 
     switch (apiStatus) {
       case apiStatusConstants.success:
-        return this.renderVideoView()
+        return this.renderVideosView()
       case apiStatusConstants.failure:
         return this.renderFailureView()
       case apiStatusConstants.inProgress:
