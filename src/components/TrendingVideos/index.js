@@ -74,7 +74,7 @@ class TrendingVideos extends Component {
     </LoaderContainer>
   )
 
-  renderVideoView = () => {
+  renderVideosView = () => {
     const {trendingVideos} = this.state
     return (
       <TrendingVideoList>
@@ -96,7 +96,7 @@ class TrendingVideos extends Component {
 
     switch (apiStatus) {
       case apiStatusConstants.success:
-        return this.renderVideoView()
+        return this.renderVideosView()
       case apiStatusConstants.failure:
         return this.renderFailureView()
       case apiStatusConstants.inProgress:
@@ -120,7 +120,7 @@ class TrendingVideos extends Component {
               <Header />
               <NavigationBar />
               <TrendingContainer
-                data-tesid="trending"
+                data-testid="trending"
                 style={{background: bgColor}}
                 onClick={toggleTheme}
               >

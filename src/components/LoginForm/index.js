@@ -29,7 +29,7 @@ class LoginForm extends Component {
     this.setState({[event.target.name]: event.target.value})
   }
 
-  OnShowPassword = () => {
+  onShowPassword = () => {
     this.setState(prevState => ({showPassword: !prevState.showPassword}))
   }
 

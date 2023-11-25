@@ -109,7 +109,7 @@ class VideoDetailView extends Component {
 
   renderFailureView = () => <FailureView onRetry={this.onRetry} />
 
-  renderVideoDetailsView = () => {
+  renderVideoDetailView = () => {
     const {apiStatus} = this.state
 
     switch (apiStatus) {
@@ -139,7 +139,7 @@ class VideoDetailView extends Component {
                 data-testid="videoItemDetails"
                 bgColor={bgColor}
               >
-                {this.renderVideoDetailsView()}
+                {this.renderVideoDetailView()}
               </VideoDetailViewContainer>
             </>
           )

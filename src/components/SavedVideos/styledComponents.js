@@ -43,7 +43,7 @@ export const SavedVideoList = styled.ul`
   margin: 0px;
   padding: 0px;
 `
-export const NoSavedVideoView = styled.div`
+export const NoSavedVideosView = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
